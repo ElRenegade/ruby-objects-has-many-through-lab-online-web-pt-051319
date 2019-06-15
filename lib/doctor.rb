@@ -2,7 +2,7 @@ class Doctor
   attr_accessor :name, :appointment, :patient
 
   @@all = []
-  
+
   def self.all
     @@all
   end
