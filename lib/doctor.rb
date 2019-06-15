@@ -2,6 +2,7 @@ class Doctor
   attr_accessor :name, :appointment, :patient
 
   @@all = []
+  
   def self.all
     @@all
   end
@@ -22,7 +23,7 @@ class Doctor
   end
 
   def patients
-   appointments.all.collect do |appointment|
+   Appiontment.all.collect do |appointment|
      appointment.patient
    end
   end
